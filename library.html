@@ -1,0 +1,57 @@
+<!DOCTYPE = html>
+<html>
+    <head>
+        <title>My Library</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <div id="form-container">
+                <button id="new-book-button" onclick="openForm()">NEW BOOK</button>
+                <div id="form">
+                    <h1> Add a book </h1>
+                    <span>
+                        <label for="author">Author</label>
+                        <input id="author" name="author" type="text" placeholder="Mark Twain"></input>
+                    </span>
+                    <span>
+                        <label for="title">Title</label>
+                        <input id="title" name="title" type="text" placeholder="The Adventures of Tom Sawyer"></input>
+                    </span>
+                    <span>
+                        <label for="pages"># of Pages</label>
+                        <input id="pages" name="pages" type="text" placeholder="679"></input>
+                    </span>
+                    <span>
+                        <label for="readStatus">Have you read it?</label>
+                        <select id="readStatus">
+                            <option value="true">Yes</option>
+                            <option value="false">No</option>
+                        </select>
+                    </span>
+                    <span>
+                        <button type="submit" onclick="addBookToLibrary()">Add Book!</button>
+                        <button type="submit" onclick="closeForm()">Cancel</button>
+                    </span>
+                </div>
+            </div>
+
+            <div id="table-container"> 
+                <h1>My Library</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Author</th>
+                            <th>Title</th>
+                            <th>Pages</th>
+                            <th>Read yet?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
